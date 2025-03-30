@@ -1,0 +1,58 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  padding: 20px;
+  gap: 20px;
+  .card-container {
+    display: flex;
+    width: 98%;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .search-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    form {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .searchBar {
+        border: transparent;
+        width: 480px;
+        height: 56px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 9px 0px var(--shadow);
+        padding: 0px 40px;
+        background-color: var(--card-bg);
+        color: var(--text);
+
+        &::placeholder {
+          color: var(--text);
+          opacity: 0.6;
+        }
+      }
+
+      select {
+        width: 200px;
+        height: 56px;
+        border-radius: 5px;
+        background-color: var(--card-bg);
+        border: transparent;
+        box-shadow: 0px 2px 9px 0px var(--shadow);
+        color: var(--text);
+      }
+    }
+  }
+}

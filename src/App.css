@@ -1,0 +1,58 @@
+:root {
+    --background: white ;
+    --text: #202c37;
+    --card-bg: #ffffff;
+    --shadow: rgb(203, 202, 202);
+  }
+  
+  [data-theme="dark"] {
+    --background: #202c37;
+    --text: #ffffff;
+    --card-bg: #2b3945;
+    --shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: var(--background);
+    color: var(--text);
+    gap: 30px;
+  }
+  
+  .top {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 4px 0px var(--shadow);
+    background-color: var(--card-bg);
+  }
+  
+  .themeswitch {
+    width: 108px;
+    height: 22px;
+    background-color: transparent;
+    border: transparent;
+    color: var(--text);
+    cursor: pointer;
+  }
+  button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }

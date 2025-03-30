@@ -1,0 +1,168 @@
+.country-detail-container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;    
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  height: 85vh;
+  .btn {
+    width: 136px;
+    height: 40px;
+    background-color: var(--card-bg);
+    border: transparent;
+    color: var(--text);
+    box-shadow: 0px 2px 4px var(--shadow);
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+
+    .theme-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .country-detail {
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    .flaginfo {
+      height: 100%;
+      width: 50%;
+      max-width: 560px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .country-info {
+      width: 50%;
+
+      h1 {
+        margin: 0 0 20px 0;
+      }
+
+      .details-grid {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 30px;
+
+        .details-column {
+          p {
+            margin: 8px 0;
+            span {
+              font-weight: 600;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+
+      .border-countries {
+        span {
+          font-weight: 600;
+          margin-right: 10px;
+        }
+
+        .border-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 10px;
+        }
+
+        .border-country {
+          padding: 5px 15px;
+          background-color: var(--card-bg);
+          box-shadow: 0px 2px 4px var(--shadow);
+          border-radius: 2px;
+          font-size: 14px;
+        }
+
+        .no-borders {
+          font-style: italic;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 15px;
+    gap: 15px;
+
+    .btn {
+      width: 120px;
+      height: 36px;
+      font-size: 14px;
+    }
+
+    .country-detail {
+      flex-direction: column;
+      gap: 30px;
+
+      .flaginfo {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .country-info {
+        width: 100%;
+
+        .details-grid {
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 95%;
+    padding: 10px;
+    gap: 10px;
+
+    .btn {
+      width: 100px;
+      height: 32px;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+    .country-detail {
+      gap: 20px;
+
+      .flaginfo {
+        max-width: 100%;
+      }
+
+      .country-info {
+        h1 {
+          font-size: 24px;
+        }
+
+        .details-grid {
+          margin-bottom: 20px;
+        }
+
+        .border-countries {
+          .border-country {
+            font-size: 12px;
+            padding: 4px 10px;
+          }
+        }
+      }
+    }
+  }
+}
