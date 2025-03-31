@@ -1,4 +1,3 @@
-// src/pages/countryDetails/index.tsx
 import { useParams, useNavigate } from "react-router-dom";
 import { countries } from "../../types/types";
 import "./style.scss";
